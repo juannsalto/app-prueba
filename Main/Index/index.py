@@ -18,8 +18,29 @@ talles = "L", "M", "S", "X" "XL", "XXL"
 modelo = "tiro ancho", "tiro bajo", "chupin", "acampanado", "roto", "corte inglés"
 
 #index
-talles = input('ingrese talle')
-print ('usted quiere, ' + talles)
 
-modelo = input('ingrese modelo')
-print ('usted quiere, ' + modelo)
+#GUIA BASICA INPUT SIN VERIFICACION
+#talles = input('ingrese talle')
+#print ('usted quiere, ' + talles)
+
+#modelo = input('ingrese modelo')
+#print ('usted quiere, ' + modelo)
+
+
+while True:
+        talles = input('ingrese talle')
+        if talles != "XL":
+            print("Pone un talle valido")
+        else:
+            print("Genial")
+            break
+        continue
+
+while True:
+        modelo = input('ingrese modelo')
+        if modelo != "tiro bajo":
+            print("elija un modelo valido")
+        else:
+            print("Bien")
+            break
+        continue

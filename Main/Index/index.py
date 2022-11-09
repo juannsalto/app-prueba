@@ -20,11 +20,11 @@ modelo = "tiro ancho", "tiro bajo", "chupin", "acampanado", "roto", "corte ingl√
 #index
 
 #GUIA BASICA INPUT SIN VERIFICACION
-#talles = input('ingrese talle')
-#print ('usted quiere, ' + talles)
+talles = input('ingrese talle')
+print ('usted quiere, ' + talles)
 
-#modelo = input('ingrese modelo')
-#print ('usted quiere, ' + modelo)
+modelo = input('ingrese modelo')
+print ('usted quiere, ' + modelo)
 
 
 while True:

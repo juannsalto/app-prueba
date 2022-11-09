@@ -10,10 +10,10 @@ print(fecha.prmonth (2022, 11))
 
 
 #Instancia de TextCalendar
-cl = calendar.TextCalendar()
+anio_entero = calendar.TextCalendar()
 
 #Elegimos el formato del año
-calendario_2022 = cl.formatyear(2022)
+calendario_2022 = anio_entero.formatyear(2022)
 
 #Mostramos el resultado
 print(calendario_2022)

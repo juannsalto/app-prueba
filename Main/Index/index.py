@@ -12,6 +12,11 @@ from cgitb import reset
 from operator import concat
 from tkinter import N, Y
 
+#forma de importacion simple de otro archivo.py
+#funciona solo si comparten proyecto
+import  calendario
+
+
 #main-resources
 talles = "L", "M", "S", "X" "XL", "XXL" 
 

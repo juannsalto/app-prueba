@@ -30,7 +30,8 @@ print ('usted quiere, ' + talles)
 
 modelo = input('ingrese modelo')
 print ('usted quiere, ' + modelo)
-
+1
+#index  con verificacion
 
 while True:
         talles = input('ingrese talle')
@@ -53,3 +54,5 @@ while True:
 
 #calendario-utilidad en calendario.py
 
+
+#cambios

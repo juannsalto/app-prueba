@@ -8,32 +8,39 @@
 ##############################
 
 from ast import While
-from cgitb import reset
 from operator import concat
 from tkinter import N, Y
+import math
 
 #forma de importacion simple de otro archivo.py
 #funciona solo si comparten proyecto
-import  calendario
-
-
-#main-resources
+#import  calendario
+ #main-resources
 talles = "L", "M", "S", "X" "XL", "XXL" 
 
 modelo = "tiro ancho", "tiro bajo", "chupin", "acampanado", "roto", "corte inglés"
 
-#index
+quiereSeguir = Y,N
 
-#GUIA BASICA INPUT SIN VERIFICACION
-talles = input('ingrese talle')
-print ('usted quiere, ' + talles)
+continuamos = Y,N
 
-modelo = input('ingrese modelo')
-print ('usted quiere, ' + modelo)
-1
-#index  con verificacion
+
 
 while True:
+ quiereSeguir = input('¿Comenzamos?')
+ if quiereSeguir != N:
+     #index0
+
+     #GUIA BASICA INPUT SIN VERIFICACION
+     #talles = input('ingrese talle')
+     #print ('usted quiere, ' + talles)
+
+     #modelo = input('ingrese modelo')
+     #print ('usted quiere, ' + modelo)
+
+     #index  con verificacion
+
+     while True:
         talles = input('ingrese talle')
         if talles != "XL":
             print("Pone un talle valido")
@@ -42,7 +49,7 @@ while True:
             break
         continue
 
-while True:
+     while True:
         modelo = input('ingrese modelo')
         if modelo != "tiro bajo":
             print("elija un modelo valido")
@@ -52,7 +59,32 @@ while True:
         continue
 
 
-#calendario-utilidad en calendario.py
+     #calendario-utilidad en calendario.py
 
 
-#cambios
+     #cambios en las variables (CONTADOR)
+     #CLASE QUE CUENTA DE FORMA GENERICA E IMPRIME EN CONSOLA
+
+     cuentaModelo = 0
+     cuentaTalle = 0
+
+     while True:
+        if modelo == "tiro bajo":
+         cuentaModelo+=1
+         print(cuentaModelo)
+         break
+        continue
+     while True:    
+        if talles == "XL":
+         cuentaTalle+=1
+         print(cuentaTalle)
+        break
+        continue
+ break
+ continue
+
+
+
+    
+   
+

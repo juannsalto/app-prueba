@@ -16,7 +16,7 @@ import math
 #funciona solo si comparten proyecto
 #import  calendario
  #main-resources
-talles = "L", "M", "S", "X" "XL", "XXL" 
+talles_input = "M", "S", "X", "XL", "XXL" 
 
 modelo = "tiro ancho", "tiro bajo", "chupin", "acampanado", "roto", "corte inglés"
 
@@ -41,9 +41,9 @@ while True:
      #index  con verificacion
 
      while True:
-        talles = input('ingrese talle')
-        if talles != "XL":
-            print("Pone un talle valido")
+        talles = input("ingrese un talle")
+        if talles!= "XL" and talles!= "S":
+             print("Pone un talle valido")
         else:
             print("Genial")
             break
@@ -78,6 +78,7 @@ while True:
         if talles == "XL":
          cuentaTalle+=1
          print(cuentaTalle)
+
         break
         continue
  break

@@ -20,15 +20,24 @@ talles_input = "M", "S", "X", "XL", "XXL"
 
 modelo = "tiro ancho", "tiro bajo", "chupin", "acampanado", "roto", "corte inglés"
 
-quiereSeguir = Y,N
+quiereComenzar = Y,N
 
 continuamos = Y,N
 
 
+#Variable de contabilidad
+cuentaModelo = 0
+
+cuentaTalle = 0
+
+cuentaModeloTotal = cuentaModelo
+cuentaTalleTotal = cuentaTalle
+
+
 
 while True:
- quiereSeguir = input('¿Comenzamos?')
- if quiereSeguir != N:
+  quiereComenzar = input('¿Comenzamos? / ¿Seguir?')
+  if quiereComenzar !=N:
      #index0
 
      #GUIA BASICA INPUT SIN VERIFICACION
@@ -42,7 +51,7 @@ while True:
 
      while True:
         talles = input("ingrese un talle")
-        if talles!= "XL" and talles!= "S":
+        if talles!= "XL" and talles!= "S" and "a" and "S" and "q" and "ee" and "ss":
              print("Pone un talle valido")
         else:
             print("Genial")
@@ -64,12 +73,10 @@ while True:
 
      #cambios en las variables (CONTADOR)
      #CLASE QUE CUENTA DE FORMA GENERICA E IMPRIME EN CONSOLA
-
-     cuentaModelo = 0
-     cuentaTalle = 0
+     
 
      while True:
-        if modelo == "tiro bajo":
+        if modelo == "tiro bajo" or modelo== "tiro ancho":
          cuentaModelo+=1
          print(cuentaModelo)
          break
@@ -78,11 +85,19 @@ while True:
         if talles == "XL":
          cuentaTalle+=1
          print(cuentaTalle)
+         break  
+  else:
+    print("¿Y entonces qué queres?")
+    break
 
-        break
-        continue
- break
- continue
+while True:
+   continuamos = print("¿Quiere continuar?")
+   if continuamos == Y:
+      quiereComenzar()
+   else:
+      print("muchas gracias")
+      break
+      continue
 
 
 

@@ -15,8 +15,9 @@ import math
 #forma de importacion simple de otro archivo.py
 #funciona solo si comparten proyecto
 #import  calendario
+
  #main-resources
-talles_input = "M", "S", "X", "XL", "XXL" 
+talles = "M", "S", "X", "XL", "XXL" 
 
 modelo = "tiro ancho", "tiro bajo", "chupin", "acampanado", "roto", "corte inglés"
 
@@ -34,7 +35,6 @@ cuentaModeloTotal = cuentaModelo
 cuentaTalleTotal = cuentaTalle
 
 
-
 while True:
   quiereComenzar = input('¿Comenzamos? / ¿Seguir?')
   if quiereComenzar !=N:
@@ -49,9 +49,11 @@ while True:
 
      #index  con verificacion
 
+
+
      while True:
         talles = input("ingrese un talle")
-        if talles!= "XL" and talles!= "S" and "a" and "S" and "q" and "ee" and "ss":
+        if talles!= "XL" and talles != "a" and "S" and "q" and "ee" and "ss":
              print("Pone un talle valido")
         else:
             print("Genial")
@@ -74,6 +76,7 @@ while True:
      #cambios en las variables (CONTADOR)
      #CLASE QUE CUENTA DE FORMA GENERICA E IMPRIME EN CONSOLA
      
+     
 
      while True:
         if modelo == "tiro bajo" or modelo== "tiro ancho":
@@ -85,22 +88,21 @@ while True:
         if talles == "XL":
          cuentaTalle+=1
          print(cuentaTalle)
-         break  
+        break
+     while True:
+        continuamos = input("¿Quiere continuar?")
+        if continuamos == Y:
+            quiereComenzar()
+        else:
+            print("muchas gracias")
+            break
   else:
     print("¿Y entonces qué queres?")
     break
-
-while True:
-   continuamos = print("¿Quiere continuar?")
-   if continuamos == Y:
-      quiereComenzar()
-   else:
-      print("muchas gracias")
-      break
-      continue
+  continue
+  
 
 
 
-    
-   
+
 

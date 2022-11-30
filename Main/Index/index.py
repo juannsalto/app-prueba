@@ -90,10 +90,10 @@ while True:
          print(cuentaTalle)
         break
      while True:
-        continuamos = input("¿Quiere continuar?")
-        if continuamos == Y:
-            quiereComenzar()
-        else:
+          continuamos = input("¿Quiere continuar?")
+          if continuamos != N:
+             quiereComenzar()
+          else:
             print("muchas gracias")
             break
   else:

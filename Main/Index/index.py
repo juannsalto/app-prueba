@@ -62,7 +62,7 @@ while True:
 
      while True:
         modelo = input('ingrese modelo')
-        if modelo != "tiro bajo":
+        if modelo != "tiro bajo" and modelo!="tiro ancho":
             print("elija un modelo valido")
         else:
             print("Bien")

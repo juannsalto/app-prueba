@@ -21,9 +21,9 @@ talles = "M", "S", "X", "XL", "XXL"
 
 modelo = "tiro ancho", "tiro bajo", "chupin", "acampanado", "roto", "corte inglés"
 
-quiereComenzar = Y,N
+quiereComenzar = "Y"
 
-continuamos = Y,N
+continuamos = N,Y
 
 
 #Variable de contabilidad
@@ -35,39 +35,40 @@ cuentaModeloTotal = cuentaModelo
 cuentaTalleTotal = cuentaTalle
 
 
+
 while True:
   quiereComenzar = input('¿Comenzamos? / ¿Seguir?')
-  if quiereComenzar !=N:
-     #index0
+  if quiereComenzar =="Y":
+      #index0
 
-     #GUIA BASICA INPUT SIN VERIFICACION
-     #talles = input('ingrese talle')
-     #print ('usted quiere, ' + talles)
+      #GUIA BASICA INPUT SIN VERIFICACION
+      #talles = input('ingrese talle')
+      #print ('usted quiere, ' + talles)
 
-     #modelo = input('ingrese modelo')
-     #print ('usted quiere, ' + modelo)
+      #modelo = input('ingrese modelo')
+      #print ('usted quiere, ' + modelo)
 
-     #index  con verificacion
+      #index  con verificacion
 
 
-
-     while True:
-        talles = input("ingrese un talle")
-        if talles!= "XL" and talles != "a" and "S" and "q" and "ee" and "ss":
-             print("Pone un talle valido")
-        else:
+   
+      while True:
+         talles = input("ingrese un talle")
+         if talles!= "XL" and talles != "a" and "S" and "q" and "ee" and "ss":
+              print("Pone un talle valido")
+         else:
             print("Genial")
             break
-        continue
+         continue
 
-     while True:
-        modelo = input('ingrese modelo')
-        if modelo != "tiro bajo" and modelo!="tiro ancho":
+      while True:
+         modelo = input('ingrese modelo')
+         if modelo != "tiro bajo" and modelo!="tiro ancho":
             print("elija un modelo valido")
-        else:
+         else:
             print("Bien")
             break
-        continue
+         continue
 
 
      #calendario-utilidad en calendario.py
@@ -78,28 +79,33 @@ while True:
      
      
 
-     while True:
+      while True:
         if modelo == "tiro bajo" or modelo== "tiro ancho":
          cuentaModelo+=1
          print(cuentaModelo)
          break
         continue
-     while True:    
+      while True:    
         if talles == "XL":
          cuentaTalle+=1
          print(cuentaTalle)
-        break
-     while True:
-          continuamos = input("¿Quiere continuar?")
-          if continuamos != N:
-             quiereComenzar()
-          else:
-            print("muchas gracias")
-            break
+         break
+        continue
   else:
     print("¿Y entonces qué queres?")
     break
   continue
+
+
+
+
+
+
+
+
+
+
+
   
 
 
